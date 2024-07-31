@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tabelas HTML</title>
+  </head>
+
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, aliquam.
+    </p>
+    <div class="container-table">
+      <table>
+        <caption>
+          Descrição da Tabela:
+        </caption>
+        <thead>
+          <!-- Cabeçalho da tabela -->
+          <!-- O tr só cria uma linha na horizonta na posição x -->
+          <tr>
+            <!--Cria a linha do cabeçalho-->
+            <th>
+              <!--Cria coluna cabeçalho-->
+              Titulo 1
+            </th>
+            <th>
+              <!--Cria coluna cabeçalho-->
+              Titulo 2
+            </th>
+            <th>
+              <!--Cria coluna cabeçalho-->
+              Titulo 3
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <!--Cria o corpo da Tabela-->
+          <tr>
+            <td>Corpo 1</td>
+            <td>Corpo 2</td>
+            <td>Corpo 3</td>
+          </tr>
+          <tr>
+            <!-- Para uma coluna ocupar duas colunas colspan="2"
+na horizontal e para ela ocupar duas linhas rowspan="2"  -->
+            <td colspan="2" rowspan="2">Corpo 1</td>
+            <td>Corpo 3</td>
+          </tr>
+          <tr>
+            <!-- <td>Corpo 1</td>
+                <td>Corpo 2</td> -->
+            <td>Corpo 3</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <!--Cria o rodape da Tabela-->
+          <tr>
+            <td colspan="2" rowspan="2">
+              Total de produtos que foram cadastrado no sistema essa semana:
+            </td>
+            <td rowspan="">Total:</td>
+            <!-- <td rowspan="2">Total: <br> R$ 5.500</td> -->
+          </tr>
+          <tr>
+            <td>R$ 5.500 reais</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+</html>
